@@ -135,26 +135,26 @@ class FontBank:
 
 
 REGION_COUNTS = {
-    "ASIA-PACIFIC": 10,
+    "ASIA-PACIFIC": 9,
     "MIDDLE EAST": 7,
-    "EUROPE": 9,
-    "AFRICA": 5,
-    "AMERICAS": 6,
+    "EUROPE": 8,
+    "AFRICA": 4,
+    "AMERICAS": 9,
     "GLOBAL & OCEANIA": 5,
 }
 
 MASTHEAD_DECK = (
     "3 nuclear leaders meet in Shenzhen · $81.3bn Anthropic record IPO ($83 ANT) · "
-    "15.9m GTA VI pre-orders unlock at midnight · 730,000 Rohingya in ICJ judgment · "
-    "200,000 flee Cyclone Akvan · $120bn COP31 crunch"
+    "15.9m GTA VI pre-orders · $190.4m Van Gogh auction record · 730,000 Rohingya ICJ verdict · "
+    "200,000 flee Cyclone Akvan"
 )
 DATE_CHECK_UTC = (
-    "00:00 UTC GTA VI NZ unlock · 00:30 UTC ABS AU jobs · 01:42 UTC Riyadh alert · "
-    "04:05 UTC Suneung halt · 09:00 UTC ICJ sitting · 14:30 UTC ANT Nasdaq debut."
+    "00:00 UTC GTA VI NZ unlock · 00:30 UTC ABS AU jobs · 01:15 UTC Van Gogh $190.4m NY hammer · "
+    "01:42 UTC Riyadh alert · 04:05 UTC Suneung halt · 09:00 UTC ICJ sitting · 14:30 UTC ANT IPO."
 )
 DATE_CHECK_EXCLUDED = (
-    "Van Gogh $190.4m sale (18 Nov), Voyager 1 light-day 10:16 GMT (18 Nov), EU €45bn Ukraine loan (18 Nov), "
-    "Jeffries 251–11 vote (18 Nov), Kuwait/Bahrain drones (18 Nov), Peltola & Pew 2035 (18 Nov), Nvidia Q3 (17 Nov)."
+    "Voyager 1 light-day 10:16 GMT (18 Nov), EU €45bn Ukraine loan (18 Nov), Jeffries 251–11 vote (18 Nov), "
+    "Kuwait/Bahrain drones (18 Nov), Peltola Alaska call & Pew 2035 report (18 Nov), Fed minutes & Nvidia Q3 (17–18 Nov)."
 )
 FOOTER_TEXT = (
     "Claims by warring sides are attributed. Original drawings. Every story happened or was first reported "
@@ -177,8 +177,8 @@ LEAD_STORIES = [
         "pastel": "blush",
         "true_lat": 22.54,
         "true_lon": 114.06,
-        "pin_lat": 16.00,
-        "pin_lon": 107.00,
+        "pin_lat": 18.00,
+        "pin_lon": 110.00,
     },
     {
         "num": 2,
@@ -195,8 +195,8 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": 40.71,
         "true_lon": -74.01,
-        "pin_lat": 41.50,
-        "pin_lon": -72.00,
+        "pin_lat": 50.00,
+        "pin_lon": -54.00,
     },
     {
         "num": 3,
@@ -213,8 +213,8 @@ LEAD_STORIES = [
         "pastel": "space",
         "true_lat": -36.85,
         "true_lon": 174.76,
-        "pin_lat": -42.00,
-        "pin_lon": 171.00,
+        "pin_lat": -44.00,
+        "pin_lon": 170.00,
     },
     {
         "num": 4,
@@ -231,8 +231,8 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": 52.08,
         "true_lon": 4.30,
-        "pin_lat": 57.00,
-        "pin_lon": -14.00,
+        "pin_lat": 58.00,
+        "pin_lon": -18.00,
     },
     {
         "num": 5,
@@ -249,8 +249,8 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": 19.81,
         "true_lon": 85.83,
-        "pin_lat": 5.00,
-        "pin_lon": 81.00,
+        "pin_lat": -4.00,
+        "pin_lon": 84.00,
     },
     {
         "num": 6,
@@ -267,8 +267,8 @@ LEAD_STORIES = [
         "pastel": "blush",
         "true_lat": 31.42,
         "true_lon": 34.37,
-        "pin_lat": 14.00,
-        "pin_lon": 17.00,
+        "pin_lat": 11.00,
+        "pin_lon": 14.00,
     },
     {
         "num": 7,
@@ -285,8 +285,8 @@ LEAD_STORIES = [
         "pastel": "sage",
         "true_lat": 36.89,
         "true_lon": 30.71,
-        "pin_lat": 42.00,
-        "pin_lon": 11.00,
+        "pin_lat": 44.00,
+        "pin_lon": 12.00,
     },
     {
         "num": 8,
@@ -303,8 +303,8 @@ LEAD_STORIES = [
         "pastel": "cream",
         "true_lat": 22.54,
         "true_lon": 114.06,
-        "pin_lat": 15.00,
-        "pin_lon": 134.00,
+        "pin_lat": 22.00,
+        "pin_lon": 142.00,
     },
     {
         "num": 9,
@@ -321,8 +321,8 @@ LEAD_STORIES = [
         "pastel": "blush",
         "true_lat": 24.71,
         "true_lon": 46.68,
-        "pin_lat": 6.00,
-        "pin_lon": 54.00,
+        "pin_lat": -2.00,
+        "pin_lon": 52.00,
     },
     {
         "num": 10,
@@ -339,26 +339,26 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": -33.87,
         "true_lon": 151.21,
-        "pin_lat": -30.50,
-        "pin_lon": 140.50,
+        "pin_lat": -30.00,
+        "pin_lon": 138.00,
     },
     {
         "num": 11,
-        "region": "ASIA-PACIFIC",
-        "beat": "SOCIETY",
-        "city": "SEOUL",
-        "agency": "KOREA HERALD / AP",
-        "headline": "Korea Grounds Flights for Suneung",
+        "region": "AMERICAS",
+        "beat": "CULTURE",
+        "city": "NEW YORK",
+        "agency": "BBC / AP",
+        "headline": "Van Gogh Sells for Record $190.4m",
         "subdeck": (
-            "35-min airspace halt, late markets & Wi-Fi jamming "
-            "back 550k test-takers."
+            "Châtaigniers en fleurs sets 01:15 UTC auction record "
+            "after Nazi-era restitution."
         ),
-        "caption": "SEOUL · 35-MIN SUNEUNG AIRSPACE HALT",
-        "pastel": "slate",
-        "true_lat": 37.57,
-        "true_lon": 126.98,
-        "pin_lat": 44.00,
-        "pin_lon": 138.00,
+        "caption": "NEW YORK · RECORD $190.4M VAN GOGH AUCTION",
+        "pastel": "cream",
+        "true_lat": 40.76,
+        "true_lon": -73.97,
+        "pin_lat": 52.00,
+        "pin_lon": -96.00,
     },
     {
         "num": 12,
@@ -375,7 +375,7 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": 45.30,
         "true_lon": 36.51,
-        "pin_lat": 56.00,
+        "pin_lat": 60.00,
         "pin_lon": 48.00,
     },
     {
@@ -393,21 +393,21 @@ LEAD_STORIES = [
         "pastel": "sky",
         "true_lat": 25.76,
         "true_lon": -80.19,
-        "pin_lat": 19.00,
-        "pin_lon": -84.00,
+        "pin_lat": 12.00,
+        "pin_lon": -88.00,
     },
 ]
 
 BRIEF_STORIES = [
-    {"num": 14, "region": "ASIA-PACIFIC", "city": "New Delhi", "summary": "India imposes 162.5% Scotch duty as Modi meets Prince & Princess of Wales.", "true_lat": 28.61, "true_lon": 77.21},
-    {"num": 15, "region": "ASIA-PACIFIC", "city": "Bengaluru", "summary": "Amazon pledges $7bn for renewable energy expansion across India by 2030.", "true_lat": 12.97, "true_lon": 77.59},
-    {"num": 16, "region": "ASIA-PACIFIC", "city": "Kumamoto", "summary": "M5.7 quake shakes Kyushu, halting bullet trains; no tsunami alert.", "true_lat": 32.20, "true_lon": 130.50},
-    {"num": 17, "region": "ASIA-PACIFIC", "city": "Tokyo", "summary": "India–Japan \"2+2\" ministers expand defense tech and maritime ties.", "true_lat": 35.68, "true_lon": 139.77},
-    {"num": 18, "region": "ASIA-PACIFIC", "city": "Taiyuan", "summary": "Long March-2D launches Shijian-24 satellite in 678th flight.", "true_lat": 38.85, "true_lon": 111.60},
+    {"num": 14, "region": "ASIA-PACIFIC", "city": "Seoul", "summary": "Korea halts flights 35 mins and delays markets as 550,000 sit Suneung exam.", "true_lat": 37.57, "true_lon": 126.98},
+    {"num": 15, "region": "ASIA-PACIFIC", "city": "Jakarta", "summary": "EU governments clear tariff-cutting trade pact with Indonesia to offset US duties.", "true_lat": -6.21, "true_lon": 106.85},
+    {"num": 16, "region": "ASIA-PACIFIC", "city": "New Delhi", "summary": "India imposes 162.5% Scotch duty as Modi meets Prince & Princess of Wales.", "true_lat": 28.61, "true_lon": 77.21},
+    {"num": 17, "region": "ASIA-PACIFIC", "city": "Bengaluru", "summary": "Amazon pledges $7bn for renewable energy expansion across India by 2030.", "true_lat": 12.97, "true_lon": 77.59},
+    {"num": 18, "region": "ASIA-PACIFIC", "city": "Tokyo", "summary": "India–Japan \"2+2\" ministers expand defense tech and maritime ties.", "true_lat": 35.68, "true_lon": 139.77},
     {"num": 19, "region": "ASIA-PACIFIC", "city": "Hong Kong", "summary": "Hang Seng drops over 1.5% past 23,000; Kospi dips nearly 1%.", "true_lat": 22.32, "true_lon": 114.17},
-    {"num": 20, "region": "MIDDLE EAST", "city": "Manama", "summary": "Bapco refinery resumes runs after attacks; Gulf urges US restraint.", "true_lat": 26.22, "true_lon": 50.59},
-    {"num": 21, "region": "MIDDLE EAST", "city": "Baghdad", "summary": "Iraqi court sentences six French ISIL members to life imprisonment.", "true_lat": 33.31, "true_lon": 44.36},
-    {"num": 22, "region": "MIDDLE EAST", "city": "Dead Sea", "summary": "Jordan–EU summit showcases $15bn projects backed by €3bn EU aid.", "true_lat": 31.72, "true_lon": 35.58},
+    {"num": 20, "region": "MIDDLE EAST", "city": "Hormuz", "summary": "UKMTO reports projectile strike on tanker engine room off Khasab; crew safe.", "true_lat": 26.20, "true_lon": 56.25},
+    {"num": 21, "region": "MIDDLE EAST", "city": "Manama", "summary": "Bapco refinery resumes runs after attacks; Gulf urges US restraint.", "true_lat": 26.22, "true_lon": 50.59},
+    {"num": 22, "region": "MIDDLE EAST", "city": "Baghdad", "summary": "Iraqi court sentences six French ISIL members to life imprisonment.", "true_lat": 33.31, "true_lon": 44.36},
     {"num": 23, "region": "MIDDLE EAST", "city": "Doha", "summary": "Expanded 48-team FIFA U-17 World Cup kicks off across Aspire Zone.", "true_lat": 25.29, "true_lon": 51.53},
     {"num": 24, "region": "EUROPE", "city": "Paris", "summary": "Justice minister concedes hard-left Mélenchon could win 2027 presidency.", "true_lat": 48.86, "true_lon": 2.35},
     {"num": 25, "region": "EUROPE", "city": "Frankfurt", "summary": "FT reports Deutsche Bank handled $582m in Epstein-linked accounts.", "true_lat": 50.11, "true_lon": 8.68},
@@ -415,12 +415,12 @@ BRIEF_STORIES = [
     {"num": 27, "region": "EUROPE", "city": "Tatarstan", "summary": "Ukrainian drones set Russia's Kaleykino oil pumping hub ablaze.", "true_lat": 54.90, "true_lon": 52.30},
     {"num": 28, "region": "EUROPE", "city": "Brussels", "summary": "EU deal delays oil-and-gas import methane rules by two years.", "true_lat": 50.85, "true_lon": 4.35},
     {"num": 29, "region": "EUROPE", "city": "London", "summary": "Final Bayesian report cites unassessed wind flaw in 2024 sinking.", "true_lat": 51.51, "true_lon": -0.13},
-    {"num": 30, "region": "EUROPE", "city": "Helsinki", "summary": "Nokia, Nscale and Telia form Nordic–Baltic AI Gigafactory team.", "true_lat": 60.17, "true_lon": 24.94},
+    {"num": 30, "region": "AFRICA", "city": "Kinshasa", "summary": "Africa CDC warns DR Congo Ebola outbreak has passed 5,500 deaths.", "true_lat": -4.32, "true_lon": 15.31},
     {"num": 31, "region": "AFRICA", "city": "Benghazi", "summary": "Officials display huge east Libya haul of cocaine and narcotic pills.", "true_lat": 32.12, "true_lon": 20.07},
     {"num": 32, "region": "AFRICA", "city": "Mogadishu", "summary": "Somalia accuses UAE of operating secret military bases on its soil.", "true_lat": 2.05, "true_lon": 45.32},
     {"num": 33, "region": "AFRICA", "city": "Nairobi", "summary": "Kenya floods kill six as Ruto gives fourth State of the Nation address.", "true_lat": -1.29, "true_lon": 36.82},
-    {"num": 34, "region": "AFRICA", "city": "Abuja", "summary": "Senate clears state-police amendment with governor-abuse safeguards.", "true_lat": 9.08, "true_lon": 7.40},
-    {"num": 35, "region": "AFRICA", "city": "Accra", "summary": "Pres Mahama urges visa-free African travel at migration forum.", "true_lat": 5.60, "true_lon": -0.19},
+    {"num": 34, "region": "AMERICAS", "city": "Ottawa", "summary": "PM Carney says Canada rethinks China ties while seeking right US deal.", "true_lat": 45.42, "true_lon": -75.70},
+    {"num": 35, "region": "AMERICAS", "city": "Caracas", "summary": "US details $12bn in Venezuelan oil revenue and signs bilateral security pact.", "true_lat": 10.48, "true_lon": -66.90},
     {"num": 36, "region": "AMERICAS", "city": "La Paz", "summary": "Bolivia declares national El Niño emergency; 78,000 families hit.", "true_lat": -16.50, "true_lon": -68.15},
     {"num": 37, "region": "AMERICAS", "city": "Washington", "summary": "Senators warn on AI cyber threats; Liu Yunping wins Dem Caucus post.", "true_lat": 38.91, "true_lon": -77.04},
     {"num": 38, "region": "AMERICAS", "city": "Sacramento", "summary": "Northern California braces for atmospheric river; flood watches out.", "true_lat": 38.58, "true_lon": -121.49},
@@ -431,9 +431,18 @@ BRIEF_STORIES = [
 ]
 
 MAP_BOX = (28, 1512, 700, 1936)
-MAP_VIEW = (42, 1550, 686, 1838)
+MAP_VIEW = (42, 1540, 686, 1776)
 MAP_LON_MIN, MAP_LON_MAX = -180.0, 180.0
 MAP_LAT_MIN, MAP_LAT_MAX = -60.0, 82.0
+
+KPI_ITEMS = (
+    ("$81.3bn", "Anthropic record IPO ($83)", True),
+    ("15.9m", "GTA VI pre-orders ($1.5bn)", False),
+    ("$190.4m", "Record Van Gogh NY sale", True),
+    ("200,000", "Evacuated for Cyclone Akvan", False),
+    ("$120bn", "COP31 adaptation finance", False),
+    ("730,000", "Rohingya in ICJ judgment", True),
+)
 
 CONTINENT_POLYGONS = [
     # North & Central America
@@ -913,26 +922,38 @@ def _draw_scene_10(art_canvas, draw, fonts: FontBank) -> None:
 
 
 def _draw_scene_11(art_canvas, draw, fonts: FontBank) -> None:
-    """#11 Korea Suneung Flight Halt: prohibited plane circle + OMR answer sheet & pencil."""
+    """#11 Van Gogh Record $190.4m Auction: ornate frame, chestnut blossoms, auction gavel."""
     w, h = art_canvas.size
-    _draw_pill_badge(draw, 14, 10, "550K", fonts.get("sans_bold", 15), "#1E293B")
+    _draw_pill_badge(draw, w - 102, 10, "$190.4M", fonts.get("sans_bold", 15), "#991B1B")
 
-    cx, cy = 104, 72
-    draw.polygon([(cx - 32, cy), (cx + 30, cy - 8), (cx + 36, cy), (cx + 30, cy + 6), (cx - 32, cy + 4)], fill="#1E3A8A")
-    draw.polygon([(cx - 6, cy - 2), (cx + 12, cy - 26), (cx + 2, cy - 2)], fill="#1E3A8A")
-    draw.polygon([(cx - 6, cy + 4), (cx + 10, cy + 26), (cx + 4, cy + 4)], fill="#1E3A8A")
-    draw.ellipse([cx - 42, cy - 42, cx + 42, cy + 42], outline="#B91C1C", width=5)
-    draw.line([(cx - 28, cy - 28), (cx + 28, cy + 28)], fill="#B91C1C", width=5)
+    # Ornate gold/bronze picture frame
+    draw.rectangle([20, 10, 186, 114], fill="#B45309", outline="#78350F", width=3)
+    draw.rectangle([26, 16, 180, 108], fill="#F59E0B", outline="#92400E", width=1)
+    # Impasto sky & green hillside inside canvas
+    draw.rectangle([32, 22, 174, 72], fill="#2563EB")
+    for sy, scol in ((28, "#60A5FA"), (38, "#3B82F6"), (48, "#93C5FD")):
+        draw.arc([34, sy, 124, sy + 24], 180, 350, fill=scol, width=4)
+        draw.arc([104, sy - 4, 174, sy + 20], 190, 350, fill=scol, width=4)
+    draw.polygon([(32, 102), (32, 74), (98, 66), (174, 76), (174, 102)], fill="#65A30D")
+    draw.polygon([(32, 102), (32, 86), (112, 80), (174, 88), (174, 102)], fill="#15803D")
 
-    draw.rectangle([180, 22, 256, 114], fill="#FFFFFF", outline="#64748B", width=2)
-    for ry in range(34, 106, 14):
-        for rx in range(192, 248, 14):
-            fill_c = "#1E293B" if (rx + ry) % 28 == 0 else "#CBD5E1"
-            draw.ellipse([rx, ry, rx + 8, ry + 8], fill=fill_c)
-    draw.polygon([(268, 104), (294, 28), (304, 32), (278, 108)], fill="#EAB308", outline="#92400E", width=1)
-    draw.rounded_rectangle([316, 62, 348, 112], radius=5, fill="#1E293B")
-    draw.rectangle([321, 69, 343, 101], fill="#475569")
-    draw.line([(312, 66), (352, 106)], fill="#B91C1C", width=3)
+    # Chestnut tree trunk & blooming brushwork canopy
+    draw.rectangle([95, 58, 109, 96], fill="#78350F")
+    draw.line([(102, 66), (82, 52)], fill="#78350F", width=4)
+    draw.line([(102, 64), (122, 50)], fill="#78350F", width=4)
+    for cx, cy, r, col in (
+        (82, 48, 18, "#15803D"), (102, 38, 20, "#16A34A"), (124, 48, 18, "#15803D"),
+        (72, 44, 9, "#FEF9C3"), (96, 32, 10, "#FEF08A"), (118, 38, 9, "#FEF9C3"),
+        (134, 48, 8, "#FACC15"), (88, 50, 7, "#FACC15"), (108, 48, 8, "#FEF08A"),
+    ):
+        draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col)
+
+    # Auction podium, sound block & gavel right
+    draw.rectangle([226, 86, 336, 98], fill="#78350F", outline="#451A03", width=1)
+    draw.rectangle([238, 98, 324, h], fill="#92400E")
+    draw.rectangle([244, 76, 286, 86], fill="#D97706", outline="#78350F", width=1)
+    draw.line([(268, 62), (326, 44)], fill="#78350F", width=5)
+    draw.rounded_rectangle([252, 48, 282, 70], radius=4, fill="#451A03", outline="#F59E0B", width=1)
 
 
 def _draw_scene_12(art_canvas, draw, fonts: FontBank) -> None:
@@ -1128,8 +1149,8 @@ def _draw_world_map(draw, fonts: FontBank) -> None:
     mx0, my0, mx1, my1 = MAP_BOX
     draw.rectangle([mx0, my0, mx1, my1], fill=PALETTE["card_bg"], outline=PALETTE["rule"], width=2)
 
-    title_font = fonts.get("sans_bold", 20)
-    draw.text((mx0 + 14, my0 + 10), "WHERE IT HAPPENED", font=title_font, fill=PALETTE["ink"])
+    title_font = fonts.get("sans_bold", 19)
+    draw.text((mx0 + 14, my0 + 8), "WHERE IT HAPPENED", font=title_font, fill=PALETTE["ink"])
 
     vx0, vy0, vx1, vy1 = MAP_VIEW
     draw.rectangle([vx0, vy0, vx1, vy1], fill=PALETTE["ocean"], outline=PALETTE["rule"], width=1)
@@ -1172,29 +1193,53 @@ def _draw_world_map(draw, fonts: FontBank) -> None:
         draw.ellipse([px - r, py - r, px + r, py + r], fill=col, outline="#FFFFFF", width=2)
         _draw_centered_text(draw, px, py, str(story["num"]), pin_font, "#FFFFFF")
 
-    leg_font = fonts.get("sans_condensed_bold", 15)
-    leg_y0 = vy1 + 10
-    col_w = 212
+    leg_font = fonts.get("sans_condensed_bold", 13)
+    leg_y0 = vy1 + 4
+    col_w = 215
     for idx, region in enumerate(REGION_ORDER):
         col_i = idx % 3
         row_i = idx // 3
         lx = vx0 + col_i * col_w
-        ly = leg_y0 + row_i * 23
-        draw.rectangle([lx, ly + 3, lx + 14, ly + 17], fill=REGION_COLORS[region])
+        ly = leg_y0 + row_i * 16
+        draw.rectangle([lx, ly + 2, lx + 11, ly + 13], fill=REGION_COLORS[region])
         label = f"{region} ({REGION_COUNTS[region]})"
-        draw.text((lx + 20, ly + 1), label, font=leg_font, fill=PALETTE["sub_ink"])
+        draw.text((lx + 16, ly), label, font=leg_font, fill=PALETTE["sub_ink"])
 
-    cap_y = leg_y0 + 48
-    cap_font = fonts.get("sans_regular", 13)
-    draw.ellipse([vx0, cap_y + 2, vx0 + 14, cap_y + 16], fill=PALETTE["crimson"])
-    _draw_centered_text(draw, vx0 + 7, cap_y + 9, "1", fonts.get("sans_bold", 10), "#FFFFFF")
-    part1 = "numbered pin: stories 1–13 above · "
-    draw.text((vx0 + 18, cap_y + 1), part1, font=cap_font, fill=PALETTE["muted"])
-    dot_x = vx0 + 18 + cap_font.getlength(part1) + 6
-    draw.ellipse([dot_x - 4, cap_y + 5, dot_x + 4, cap_y + 13], fill=PALETTE["muted"])
-    part2 = "dot: briefs 14–42 · Hairlines lead from crowded"
-    draw.text((dot_x + 10, cap_y + 1), part2, font=cap_font, fill=PALETTE["muted"])
-    draw.text((vx0, cap_y + 17), "spots to the true place.", font=cap_font, fill=PALETTE["muted"])
+    cap_y = leg_y0 + 34
+    cap_font = fonts.get("sans_regular", 12)
+    draw.ellipse([vx0, cap_y + 1, vx0 + 12, cap_y + 13], fill=PALETTE["crimson"])
+    _draw_centered_text(draw, vx0 + 6, cap_y + 7, "1", fonts.get("sans_bold", 9), "#FFFFFF")
+    part1 = "pin: stories 1–13 · "
+    draw.text((vx0 + 16, cap_y), part1, font=cap_font, fill=PALETTE["muted"])
+    dot_x = vx0 + 16 + cap_font.getlength(part1) + 4
+    draw.ellipse([dot_x - 3.5, cap_y + 4, dot_x + 3.5, cap_y + 11], fill=PALETTE["muted"])
+    part2 = "dot: briefs 14–42 · Hairlines lead to true place."
+    draw.text((dot_x + 8, cap_y), part2, font=cap_font, fill=PALETTE["muted"])
+
+    # Under-map 3x2 Big-Number KPI Callout Block (y=1827..1932)
+    kpi_y0 = 1827
+    draw.line([(vx0, kpi_y0), (vx1, kpi_y0)], fill=PALETTE["rule"], width=2)
+    draw.text((vx0, kpi_y0 + 3), "THE DAY IN NUMBERS", font=fonts.get("sans_bold", 12), fill=PALETTE["crimson"])
+
+    grid_y0 = kpi_y0 + 19
+    cell_w = (vx1 - vx0) / 3.0
+    cell_h = 43
+    val_font = fonts.get("serif_bold", 22)
+    lbl_font = fonts.get("sans_condensed_regular", 14)
+
+    draw.line([(vx0, grid_y0 + cell_h), (vx1, grid_y0 + cell_h)], fill=PALETTE["rule_light"], width=1)
+    for col_sep in (1, 2):
+        sx = int(round(vx0 + col_sep * cell_w))
+        draw.line([(sx, grid_y0 + 2), (sx, grid_y0 + cell_h * 2 - 2)], fill=PALETTE["rule_light"], width=1)
+
+    for idx, (val, desc, accent) in enumerate(KPI_ITEMS):
+        col_i = idx % 3
+        row_i = idx // 3
+        cx = vx0 + col_i * cell_w + (6 if col_i > 0 else 0)
+        cy = grid_y0 + row_i * cell_h + 2
+        val_col = PALETTE["crimson"] if accent else PALETTE["ink"]
+        draw.text((cx, cy), val, font=val_font, fill=val_col)
+        draw.text((cx, cy + 23), desc, font=lbl_font, fill=PALETTE["sub_ink"])
 
 
 def _draw_briefs_panel(draw, fonts: FontBank) -> None:
@@ -1234,8 +1279,8 @@ def _draw_date_check(draw, fonts: FontBank) -> None:
     draw.rectangle([dx0, dy0, dx1, dy1], fill=PALETTE["date_bg"], outline="#F0C6BA", width=1)
     draw.rectangle([dx0, dy0, dx0 + 6, dy1], fill=PALETTE["crimson"])
 
-    bold_font = fonts.get("sans_bold", 15)
-    reg_font = fonts.get("sans_regular", 15)
+    bold_font = fonts.get("sans_bold", 14)
+    reg_font = fonts.get("sans_regular", 14)
 
     lbl1 = "DATE CHECK — Verified Thu 19 Nov UTC: "
     draw.text((dx0 + 18, dy0 + 10), lbl1, font=bold_font, fill=PALETTE["crimson"])
