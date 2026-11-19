@@ -135,29 +135,30 @@ class FontBank:
 
 
 REGION_COUNTS = {
-    "ASIA-PACIFIC": 9,
-    "MIDDLE EAST": 5,
+    "ASIA-PACIFIC": 10,
+    "MIDDLE EAST": 7,
     "EUROPE": 9,
-    "AFRICA": 6,
-    "AMERICAS": 7,
-    "GLOBAL & OCEANIA": 6,
+    "AFRICA": 5,
+    "AMERICAS": 6,
+    "GLOBAL & OCEANIA": 5,
 }
 
 MASTHEAD_DECK = (
-    "Trump, Xi & Putin hold historic Shenzhen talks · Anthropic prices $81.3bn IPO · "
-    "Riyadh intercepts missile · ICJ Rohingya judgment day · GTA VI drops"
+    "3 nuclear leaders meet in Shenzhen · $81.3bn Anthropic record IPO ($83 ANT) · "
+    "15.9m GTA VI pre-orders unlock at midnight · 730,000 Rohingya in ICJ judgment · "
+    "200,000 flee Cyclone Akvan · $120bn COP31 crunch"
 )
 DATE_CHECK_UTC = (
-    "ABS AU jobs 00:30 UTC · Riyadh alert 01:42 UTC · "
-    "Suneung halt 04:05–04:40 UTC · ICJ sitting 09:00 UTC."
+    "00:00 UTC GTA VI NZ unlock · 00:30 UTC ABS AU jobs · 01:42 UTC Riyadh alert · "
+    "04:05 UTC Suneung halt · 09:00 UTC ICJ sitting · 14:30 UTC ANT Nasdaq debut."
 )
 DATE_CHECK_EXCLUDED = (
-    "Van Gogh NY $190.4m (18 Nov), Voyager 1 light-day (18 Nov), EU €45bn loan (18 Nov), "
-    "Jeffries 251–11 vote (18 Nov), Hobart ODI (18 Nov), Carney–Xi (17 Nov), Nature study (4 Nov)."
+    "Van Gogh $190.4m sale (18 Nov), Voyager 1 light-day 10:16 GMT (18 Nov), EU €45bn Ukraine loan (18 Nov), "
+    "Jeffries 251–11 vote (18 Nov), Kuwait/Bahrain drones (18 Nov), Peltola & Pew 2035 (18 Nov), Nvidia Q3 (17 Nov)."
 )
 FOOTER_TEXT = (
     "Claims by warring sides are attributed. Original drawings. Every story happened or was first reported "
-    "Thursday 19 November 2026. Sources: Reuters, AP, AFP, Al Jazeera, Guardian, Xinhua, UN/ICJ, UNFCCC, ABS."
+    "Thursday 19 November 2026. Sources: Reuters, AP, AFP, Bloomberg, Al Jazeera, Guardian, BBC, UN/ICJ, ABS."
 )
 
 LEAD_STORIES = [
@@ -167,30 +168,30 @@ LEAD_STORIES = [
         "beat": "SUMMIT",
         "city": "SHENZHEN",
         "agency": "REUTERS / AP",
-        "headline": "Trump, Xi and Putin Hold Historic Shenzhen Summit",
+        "headline": "Trump, Xi and Putin Hold First Three-Way Summit",
         "subdeck": (
-            "First US–China–Russia leaders' trilateral meets on APEC sidelines; "
-            "nuclear stability, Ukraine and Iran top agenda."
+            "Nuclear powers meet 1 hr on APEC sidelines in Shenzhen; "
+            "arms control, Ukraine & Gulf war top agenda."
         ),
-        "caption": "SHENZHEN · HISTORIC TRILATERAL SUMMIT",
-        "pastel": "cream",
+        "caption": "SHENZHEN · FIRST TRILATERAL SUMMIT AT APEC",
+        "pastel": "blush",
         "true_lat": 22.54,
         "true_lon": 114.06,
-        "pin_lat": 17.50,
-        "pin_lon": 110.50,
+        "pin_lat": 16.00,
+        "pin_lon": 107.00,
     },
     {
         "num": 2,
         "region": "AMERICAS",
         "beat": "MARKETS",
         "city": "NEW YORK",
-        "agency": "REUTERS / AL JAZEERA",
+        "agency": "REUTERS / BLOOMBERG",
         "headline": "Anthropic Prices Record $81.3bn Nasdaq IPO",
         "subdeck": (
-            "AI firm sells 980m shares at $83 (~$1.5tn valuation) ahead of "
-            "Thursday ANT debut, topping SpaceX's record."
+            "Claude AI maker sells 980m shares at $83 (~$1.5tn valuation) "
+            "as ANT debuts Thursday, biggest IPO ever."
         ),
-        "caption": "NEW YORK · RECORD AI IPO DEBUT",
+        "caption": "NEW YORK · NASDAQ: ANT RECORD AI IPO DEBUT",
         "pastel": "sky",
         "true_lat": 40.71,
         "true_lon": -74.01,
@@ -199,21 +200,21 @@ LEAD_STORIES = [
     },
     {
         "num": 3,
-        "region": "MIDDLE EAST",
-        "beat": "SECURITY",
-        "city": "RIYADH",
-        "agency": "AFP / MEE",
-        "headline": "Blast Shakes Riyadh as Defences Intercept Missile",
+        "region": "GLOBAL & OCEANIA",
+        "beat": "CULTURE",
+        "city": "AUCKLAND",
+        "agency": "AFP / AP",
+        "headline": "GTA VI Arrives at Midnight After 13-Year Wait",
         "subdeck": (
-            "Civil Defense issues 04:42 alert before coalition intercepts Houthi "
-            "missile over capital; debris causes minor damage."
+            "15.9m pre-orders ($1.5bn) banked as New Zealand & Australia "
+            "play first on PS5 & Xbox; leave requests jump 32%."
         ),
-        "caption": "RIYADH · DAWN MISSILE INTERCEPT",
-        "pastel": "blush",
-        "true_lat": 24.71,
-        "true_lon": 46.68,
-        "pin_lat": 19.50,
-        "pin_lon": 53.50,
+        "caption": "GLOBAL · VICE CITY UNLOCKS AT LOCAL MIDNIGHT",
+        "pastel": "space",
+        "true_lat": -36.85,
+        "true_lon": 174.76,
+        "pin_lat": -42.00,
+        "pin_lon": 171.00,
     },
     {
         "num": 4,
@@ -221,17 +222,17 @@ LEAD_STORIES = [
         "beat": "JUSTICE",
         "city": "THE HAGUE",
         "agency": "UN / ICJ",
-        "headline": "ICJ Sits for Rohingya Genocide Verdict",
+        "headline": "World Court Rules on Rohingya Case",
         "subdeck": (
-            "UN court holds 10:00 CET sitting in The Gambia's landmark "
-            "case vs Myanmar."
+            "ICJ reads 10:00 CET verdict in The Hague on Myanmar's "
+            "2017 campaign (730k fled)."
         ),
-        "caption": "THE HAGUE · GENOCIDE CASE VERDICT DAY",
-        "pastel": "slate",
+        "caption": "THE HAGUE · PEACE PALACE GENOCIDE JUDGMENT",
+        "pastel": "sky",
         "true_lat": 52.08,
         "true_lon": 4.30,
-        "pin_lat": 56.50,
-        "pin_lon": -9.50,
+        "pin_lat": 57.00,
+        "pin_lon": -14.00,
     },
     {
         "num": 5,
@@ -239,35 +240,35 @@ LEAD_STORIES = [
         "beat": "CYCLONE",
         "city": "ODISHA",
         "agency": "PTI / THE HINDU",
-        "headline": "Cyclone Akvan Forces 50k Off Odisha Coast",
+        "headline": "Cyclone Akvan Forces 200k Off Coast",
         "subdeck": (
-            "11 districts on red alert; schools shut Thu–Sat ahead of "
-            "Friday landfall."
+            "11 districts on red alert and schools shut as 145 km/h "
+            "storm nears Puri."
         ),
-        "caption": "ODISHA · CYCLONE AKVAN EVACUATIONS",
+        "caption": "ODISHA · 200,000 EVACUATED AHEAD OF LANDFALL",
         "pastel": "sky",
         "true_lat": 19.81,
         "true_lon": 85.83,
-        "pin_lat": 18.00,
-        "pin_lon": 83.00,
+        "pin_lat": 5.00,
+        "pin_lon": 81.00,
     },
     {
         "num": 6,
-        "region": "EUROPE",
-        "beat": "DIPLOMACY",
-        "city": "BERLIN",
-        "agency": "NATO / UKRINFORM",
-        "headline": "Allies Meet in Berlin on Ukraine Security",
+        "region": "MIDDLE EAST",
+        "beat": "WAR",
+        "city": "GAZA",
+        "agency": "REUTERS / BBC",
+        "headline": "Israeli Tanks Cross Gaza Yellow Line",
         "subdeck": (
-            "Merz, Macron, Burnham, Rutte & US envoys meet on Ukraine "
-            "security pact."
+            "IDF says rare raid hit Gaza terror sites; Hamas calls "
+            "move a truce breach."
         ),
-        "caption": "BERLIN · COALITION OF THE WILLING",
-        "pastel": "slate",
-        "true_lat": 52.52,
-        "true_lon": 13.40,
-        "pin_lat": 64.50,
-        "pin_lon": 15.50,
+        "caption": "CENTRAL GAZA · TANKS CROSS CEASEFIRE LINE",
+        "pastel": "blush",
+        "true_lat": 31.42,
+        "true_lon": 34.37,
+        "pin_lat": 14.00,
+        "pin_lon": 17.00,
     },
     {
         "num": 7,
@@ -275,53 +276,53 @@ LEAD_STORIES = [
         "beat": "CLIMATE",
         "city": "ANTALYA",
         "agency": "UNFCCC / GUARDIAN",
-        "headline": "COP31 Enters Crunch Aid & Draft Talks",
+        "headline": "COP31 Enters Final 48h Crunch Talks",
         "subdeck": (
-            "Ministers narrow 18-page fossil and aid text as Germany "
-            "starts SF6 Pledge."
+            "Ministers tackle 18-page text with $120bn aid and "
+            "fossil phase-out open."
         ),
-        "caption": "ANTALYA · COP31 PENULTIMATE DAY",
+        "caption": "ANTALYA · COP31 $120BN ADAPTATION CRUNCH",
         "pastel": "sage",
         "true_lat": 36.89,
         "true_lon": 30.71,
-        "pin_lat": 34.00,
-        "pin_lon": 21.00,
+        "pin_lat": 42.00,
+        "pin_lon": 11.00,
     },
     {
         "num": 8,
-        "region": "GLOBAL & OCEANIA",
-        "beat": "CULTURE",
-        "city": "AUCKLAND",
-        "agency": "AFP / BERNAMA",
-        "headline": "Grand Theft Auto VI Launches at Midnight",
+        "region": "ASIA-PACIFIC",
+        "beat": "TRADE",
+        "city": "SHENZHEN",
+        "agency": "REUTERS / XINHUA",
+        "headline": "APEC Leaders Adopt Shenzhen Pact",
         "subdeck": (
-            "NZ and Australia lead PS5 & Xbox rollout, ending 13-year wait "
-            "since GTA V."
+            "21 Pacific Rim economies back digital trade and "
+            "supply-chain roadmap."
         ),
-        "caption": "GLOBAL · GTA VI RELEASE DAY",
-        "pastel": "blush",
-        "true_lat": -36.85,
-        "true_lon": 174.76,
-        "pin_lat": -42.00,
-        "pin_lon": 171.00,
+        "caption": "SHENZHEN · 21-ECONOMY APEC DECLARATION",
+        "pastel": "cream",
+        "true_lat": 22.54,
+        "true_lon": 114.06,
+        "pin_lat": 15.00,
+        "pin_lon": 134.00,
     },
     {
         "num": 9,
-        "region": "AFRICA",
-        "beat": "CONFLICT",
-        "city": "AFRICA",
-        "agency": "RELIEFWEB",
-        "headline": "44% of War-Zone Kids Live in Africa",
+        "region": "MIDDLE EAST",
+        "beat": "SECURITY",
+        "city": "RIYADH",
+        "agency": "AFP / AL JAZEERA",
+        "headline": "Riyadh Downs Missile; All-Clear",
         "subdeck": (
-            "Save the Children logs 260m African children near conflict "
-            "of 589m globally."
+            "Saudi Civil Defense lifts Riyadh, Jazan & Najran alerts "
+            "after intercept."
         ),
-        "caption": "AFRICA · CHILDREN IN CONFLICT REPORT",
-        "pastel": "cream",
-        "true_lat": 5.00,
-        "true_lon": 21.00,
-        "pin_lat": 2.50,
-        "pin_lon": 21.50,
+        "caption": "RIYADH & JAZAN · MISSILE INTERCEPT & ALL-CLEAR",
+        "pastel": "blush",
+        "true_lat": 24.71,
+        "true_lon": 46.68,
+        "pin_lat": 6.00,
+        "pin_lon": 54.00,
     },
     {
         "num": 10,
@@ -329,12 +330,12 @@ LEAD_STORIES = [
         "beat": "ECONOMY",
         "city": "SYDNEY",
         "agency": "ABS / GUARDIAN",
-        "headline": "Australian Jobless Jumps to 4.9%",
+        "headline": "Australian Jobless Rate Jumps to 4.9%",
         "subdeck": (
-            "ABS reports 43,500 Oct jobs shed, highest rate since 2021, "
+            "ABS logs 43,500 Oct jobs shed, highest since 2021, "
             "cooling hike bets."
         ),
-        "caption": "AUSTRALIA · UNEMPLOYMENT JUMPS",
+        "caption": "AUSTRALIA · UNEMPLOYMENT HITS 4-YEAR HIGH",
         "pastel": "sky",
         "true_lat": -33.87,
         "true_lon": 151.21,
@@ -346,49 +347,49 @@ LEAD_STORIES = [
         "region": "ASIA-PACIFIC",
         "beat": "SOCIETY",
         "city": "SEOUL",
-        "agency": "KOREA HERALD",
-        "headline": "Korea Grounds Flights for Suneung Exam",
+        "agency": "KOREA HERALD / AP",
+        "headline": "Korea Grounds Flights for Suneung",
         "subdeck": (
-            "Over 550k sit college test amid 35-min airspace halt and "
-            "Wi-Fi jamming."
+            "35-min airspace halt, late markets & Wi-Fi jamming "
+            "back 550k test-takers."
         ),
-        "caption": "SEOUL · SUNEUNG EXAM FLIGHT HALT",
+        "caption": "SEOUL · 35-MIN SUNEUNG AIRSPACE HALT",
         "pastel": "slate",
         "true_lat": 37.57,
         "true_lon": 126.98,
-        "pin_lat": 41.50,
-        "pin_lon": 134.50,
+        "pin_lat": 44.00,
+        "pin_lon": 138.00,
     },
     {
         "num": 12,
         "region": "EUROPE",
         "beat": "WAR",
         "city": "CRIMEA",
-        "agency": "GUARDIAN / AA",
-        "headline": "Third Strike in Week Halts Kerch Bridge",
+        "agency": "BBC / GUARDIAN",
+        "headline": "Kerch Bridge Halted as Kyiv Watches",
         "subdeck": (
-            "Russian-installed Crimea governor halts traffic Thu for "
-            "bridge inspections."
+            "Russian officials halt traffic after 3rd hit in week; "
+            "Kyiv fears carve-up."
         ),
-        "caption": "CRIMEA · KERCH BRIDGE STRUCK AGAIN",
-        "pastel": "blush",
+        "caption": "CRIMEA · KERCH BRIDGE TRAFFIC HALTED",
+        "pastel": "sky",
         "true_lat": 45.30,
         "true_lon": 36.51,
-        "pin_lat": 50.00,
-        "pin_lon": 44.50,
+        "pin_lat": 56.00,
+        "pin_lon": 48.00,
     },
     {
         "num": 13,
         "region": "AMERICAS",
         "beat": "WEATHER",
         "city": "MIAMI",
-        "agency": "CBS MIAMI",
-        "headline": "South Florida Floods Shut Major Schools",
+        "agency": "AP / CBS MIAMI",
+        "headline": "South Florida Deluge Shuts Schools",
         "subdeck": (
-            "Up to 17 inches of rain swamps streets, closing Broward and "
-            "Miami schools."
+            "Up to 17 in rain spurs 300 Broward rescues, shutting "
+            "South Florida schools."
         ),
-        "caption": "SOUTH FLORIDA · SCHOOL FLOODS",
+        "caption": "SOUTH FLORIDA · 300 RESCUES & SCHOOL CLOSURES",
         "pastel": "sky",
         "true_lat": 25.76,
         "true_lon": -80.19,
@@ -398,35 +399,35 @@ LEAD_STORIES = [
 ]
 
 BRIEF_STORIES = [
-    {"num": 14, "region": "ASIA-PACIFIC", "city": "Kumamoto", "summary": "M5.7 quake shakes Kyushu, halting bullet trains; no tsunami.", "true_lat": 32.20, "true_lon": 130.50},
-    {"num": 15, "region": "ASIA-PACIFIC", "city": "Taiyuan", "summary": "Long March-2D launches Shijian-24 satellite in 678th flight.", "true_lat": 38.85, "true_lon": 111.60},
-    {"num": 16, "region": "ASIA-PACIFIC", "city": "Dhaka", "summary": "Paramilitary troops patrol Bangladesh amid Awami League lockdown.", "true_lat": 23.81, "true_lon": 90.41},
+    {"num": 14, "region": "ASIA-PACIFIC", "city": "New Delhi", "summary": "India imposes 162.5% Scotch duty as Modi meets Prince & Princess of Wales.", "true_lat": 28.61, "true_lon": 77.21},
+    {"num": 15, "region": "ASIA-PACIFIC", "city": "Bengaluru", "summary": "Amazon pledges $7bn for renewable energy expansion across India by 2030.", "true_lat": 12.97, "true_lon": 77.59},
+    {"num": 16, "region": "ASIA-PACIFIC", "city": "Kumamoto", "summary": "M5.7 quake shakes Kyushu, halting bullet trains; no tsunami alert.", "true_lat": 32.20, "true_lon": 130.50},
     {"num": 17, "region": "ASIA-PACIFIC", "city": "Tokyo", "summary": "India–Japan \"2+2\" ministers expand defense tech and maritime ties.", "true_lat": 35.68, "true_lon": 139.77},
-    {"num": 18, "region": "ASIA-PACIFIC", "city": "Bangkok", "summary": "Farm ministry reviews US pork access safeguards to shield growers.", "true_lat": 13.76, "true_lon": 100.50},
-    {"num": 19, "region": "ASIA-PACIFIC", "city": "Hong Kong", "summary": "Hang Seng falls over 1.5% past 23,000; Kospi dips nearly 1%.", "true_lat": 22.32, "true_lon": 114.17},
-    {"num": 20, "region": "MIDDLE EAST", "city": "Sanaa", "summary": "Saudi-led coalition strikes Houthi sites after Riyadh missile alert.", "true_lat": 15.37, "true_lon": 44.19},
-    {"num": 21, "region": "MIDDLE EAST", "city": "Dead Sea", "summary": "Jordan–EU summit showcases $15bn projects backed by €3bn EU aid.", "true_lat": 31.72, "true_lon": 35.58},
-    {"num": 22, "region": "MIDDLE EAST", "city": "Doha", "summary": "Expanded 48-team FIFA U-17 World Cup kicks off across Aspire Zone.", "true_lat": 25.29, "true_lon": 51.53},
-    {"num": 23, "region": "EUROPE", "city": "Tatarstan", "summary": "Ukrainian drones set Russia's Kaleykino oil pumping hub ablaze.", "true_lat": 54.90, "true_lon": 52.30},
-    {"num": 24, "region": "EUROPE", "city": "Brussels", "summary": "EU deal delays oil-and-gas import methane rules by two years.", "true_lat": 50.85, "true_lon": 4.35},
-    {"num": 25, "region": "EUROPE", "city": "London", "summary": "Final Bayesian report cites unassessed wind flaw in 2024 sinking.", "true_lat": 51.51, "true_lon": -0.13},
-    {"num": 26, "region": "EUROPE", "city": "Helsinki", "summary": "Nokia, Nscale and Telia form Nordic–Baltic AI Gigafactory team.", "true_lat": 60.17, "true_lon": 24.94},
-    {"num": 27, "region": "EUROPE", "city": "Vienna", "summary": "OSCE Chair Cassis calls special talks on 2027 chair deadlock.", "true_lat": 48.21, "true_lon": 16.37},
-    {"num": 28, "region": "EUROPE", "city": "Madrid", "summary": "Spain enforces decree mandating pay bands, banning pay queries.", "true_lat": 40.42, "true_lon": -3.70},
-    {"num": 29, "region": "AFRICA", "city": "Nairobi", "summary": "Drought cuts Kenya dairy output, deepening urban milk shortage.", "true_lat": -1.29, "true_lon": 36.82},
-    {"num": 30, "region": "AFRICA", "city": "Abuja", "summary": "Senate clears state-police amendment with governor-abuse safeguards.", "true_lat": 9.08, "true_lon": 7.40},
-    {"num": 31, "region": "AFRICA", "city": "Johannesburg", "summary": "Deputy Pres Mashatile faces MPs, keynotes AABLA gala.", "true_lat": -26.20, "true_lon": 28.05},
-    {"num": 32, "region": "AFRICA", "city": "Accra", "summary": "Pres Mahama urges visa-free African travel at migration forum.", "true_lat": 5.60, "true_lon": -0.19},
-    {"num": 33, "region": "AFRICA", "city": "Lilongwe", "summary": "Sovereign Metals installs Tim Carstens as chair for Kasiya mine.", "true_lat": -13.96, "true_lon": 33.77},
-    {"num": 34, "region": "AMERICAS", "city": "Bogotá", "summary": "Unions and students mount Paro Nacional strike over tax bill.", "true_lat": 4.71, "true_lon": -74.07},
-    {"num": 35, "region": "AMERICAS", "city": "Mexico City", "summary": "Banxico publishes 3–2 split minutes on rate cut to 6.25%.", "true_lat": 19.43, "true_lon": -99.13},
-    {"num": 36, "region": "AMERICAS", "city": "Washington", "summary": "FCC takes up drone spectrum and prison signal-jamming rules.", "true_lat": 38.91, "true_lon": -77.04},
-    {"num": 37, "region": "AMERICAS", "city": "Ottawa", "summary": "Canada Disability Benefit issues November tranche up to C$204.", "true_lat": 45.42, "true_lon": -75.70},
-    {"num": 38, "region": "AMERICAS", "city": "Atlanta", "summary": "US marks 50th Great American Smokeout public health campaign.", "true_lat": 33.75, "true_lon": -84.39},
-    {"num": 39, "region": "GLOBAL & OCEANIA", "city": "Wellington", "summary": "Bumrah 3/31 rocks hosts before Nicholls 100* lifts NZ to 214/5.", "true_lat": -41.29, "true_lon": 174.78},
-    {"num": 40, "region": "GLOBAL & OCEANIA", "city": "Nukuʻalofa", "summary": "Tonga declares 27-day emergency over El Niño drought crisis.", "true_lat": -21.14, "true_lon": -175.20},
-    {"num": 41, "region": "GLOBAL & OCEANIA", "city": "Global", "summary": "Gold rebounds toward $3,755/oz from 14-mo low; Brent near $92.", "true_lat": 26.00, "true_lon": -40.00},
-    {"num": 42, "region": "GLOBAL & OCEANIA", "city": "Singapore", "summary": "13 nations issue principles to crush SE Asia cyber-scam hubs.", "true_lat": 1.35, "true_lon": 103.82},
+    {"num": 18, "region": "ASIA-PACIFIC", "city": "Taiyuan", "summary": "Long March-2D launches Shijian-24 satellite in 678th flight.", "true_lat": 38.85, "true_lon": 111.60},
+    {"num": 19, "region": "ASIA-PACIFIC", "city": "Hong Kong", "summary": "Hang Seng drops over 1.5% past 23,000; Kospi dips nearly 1%.", "true_lat": 22.32, "true_lon": 114.17},
+    {"num": 20, "region": "MIDDLE EAST", "city": "Manama", "summary": "Bapco refinery resumes runs after attacks; Gulf urges US restraint.", "true_lat": 26.22, "true_lon": 50.59},
+    {"num": 21, "region": "MIDDLE EAST", "city": "Baghdad", "summary": "Iraqi court sentences six French ISIL members to life imprisonment.", "true_lat": 33.31, "true_lon": 44.36},
+    {"num": 22, "region": "MIDDLE EAST", "city": "Dead Sea", "summary": "Jordan–EU summit showcases $15bn projects backed by €3bn EU aid.", "true_lat": 31.72, "true_lon": 35.58},
+    {"num": 23, "region": "MIDDLE EAST", "city": "Doha", "summary": "Expanded 48-team FIFA U-17 World Cup kicks off across Aspire Zone.", "true_lat": 25.29, "true_lon": 51.53},
+    {"num": 24, "region": "EUROPE", "city": "Paris", "summary": "Justice minister concedes hard-left Mélenchon could win 2027 presidency.", "true_lat": 48.86, "true_lon": 2.35},
+    {"num": 25, "region": "EUROPE", "city": "Frankfurt", "summary": "FT reports Deutsche Bank handled $582m in Epstein-linked accounts.", "true_lat": 50.11, "true_lon": 8.68},
+    {"num": 26, "region": "EUROPE", "city": "Berlin", "summary": "Merz, Macron, Burnham & Rutte meet on Ukraine security guarantees.", "true_lat": 52.52, "true_lon": 13.40},
+    {"num": 27, "region": "EUROPE", "city": "Tatarstan", "summary": "Ukrainian drones set Russia's Kaleykino oil pumping hub ablaze.", "true_lat": 54.90, "true_lon": 52.30},
+    {"num": 28, "region": "EUROPE", "city": "Brussels", "summary": "EU deal delays oil-and-gas import methane rules by two years.", "true_lat": 50.85, "true_lon": 4.35},
+    {"num": 29, "region": "EUROPE", "city": "London", "summary": "Final Bayesian report cites unassessed wind flaw in 2024 sinking.", "true_lat": 51.51, "true_lon": -0.13},
+    {"num": 30, "region": "EUROPE", "city": "Helsinki", "summary": "Nokia, Nscale and Telia form Nordic–Baltic AI Gigafactory team.", "true_lat": 60.17, "true_lon": 24.94},
+    {"num": 31, "region": "AFRICA", "city": "Benghazi", "summary": "Officials display huge east Libya haul of cocaine and narcotic pills.", "true_lat": 32.12, "true_lon": 20.07},
+    {"num": 32, "region": "AFRICA", "city": "Mogadishu", "summary": "Somalia accuses UAE of operating secret military bases on its soil.", "true_lat": 2.05, "true_lon": 45.32},
+    {"num": 33, "region": "AFRICA", "city": "Nairobi", "summary": "Kenya floods kill six as Ruto gives fourth State of the Nation address.", "true_lat": -1.29, "true_lon": 36.82},
+    {"num": 34, "region": "AFRICA", "city": "Abuja", "summary": "Senate clears state-police amendment with governor-abuse safeguards.", "true_lat": 9.08, "true_lon": 7.40},
+    {"num": 35, "region": "AFRICA", "city": "Accra", "summary": "Pres Mahama urges visa-free African travel at migration forum.", "true_lat": 5.60, "true_lon": -0.19},
+    {"num": 36, "region": "AMERICAS", "city": "La Paz", "summary": "Bolivia declares national El Niño emergency; 78,000 families hit.", "true_lat": -16.50, "true_lon": -68.15},
+    {"num": 37, "region": "AMERICAS", "city": "Washington", "summary": "Senators warn on AI cyber threats; Liu Yunping wins Dem Caucus post.", "true_lat": 38.91, "true_lon": -77.04},
+    {"num": 38, "region": "AMERICAS", "city": "Sacramento", "summary": "Northern California braces for atmospheric river; flood watches out.", "true_lat": 38.58, "true_lon": -121.49},
+    {"num": 39, "region": "AMERICAS", "city": "Mexico City", "summary": "Banxico publishes 3–2 split minutes on rate cut to 6.25%.", "true_lat": 19.43, "true_lon": -99.13},
+    {"num": 40, "region": "GLOBAL & OCEANIA", "city": "Canberra", "summary": "Australia sanctions West Bank settlers, three people and four groups.", "true_lat": -35.28, "true_lon": 149.13},
+    {"num": 41, "region": "GLOBAL & OCEANIA", "city": "Sydney", "summary": "Ben Duckett's 133 puts England in charge of third ODI vs Australia.", "true_lat": -42.88, "true_lon": 147.33},
+    {"num": 42, "region": "GLOBAL & OCEANIA", "city": "Nukuʻalofa", "summary": "Tonga declares 27-day emergency over El Niño drought crisis.", "true_lat": -21.14, "true_lon": -175.20},
 ]
 
 MAP_BOX = (28, 1512, 700, 1936)
@@ -584,11 +585,10 @@ def _draw_palm(draw, bx: float, by: float, h: float, lean: float, color: str) ->
 def _draw_scene_1(art_canvas, draw, fonts: FontBank) -> None:
     """#1 Shenzhen Trilateral Summit: lakeside Kylin Villa, flags, 3 leaders."""
     w, h = art_canvas.size
-    # Subtle sky gradient & soft cloud puffs in #1
-    for band_y, col in ((0, "#F5EFE3"), (32, "#EFE6D5"), (64, "#E9DEC8")):
+    for band_y, col in ((0, "#FAF0EC"), (32, "#F5E1DA"), (64, "#EED5CB")):
         draw.rectangle([0, band_y, w, band_y + 34], fill=col)
     for cx, cy, r in ((86, 40, 16), (106, 36, 18), (518, 38, 16), (538, 42, 14)):
-        draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#FAF6EE")
+        draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#FDF8F6")
     draw.rectangle([0, 96, w, h], fill="#D6E4EC")
     draw.line([(0, 96), (w, 96)], fill="#94A3B8", width=2)
     for ry in (110, 124, 138):
@@ -601,7 +601,7 @@ def _draw_scene_1(art_canvas, draw, fonts: FontBank) -> None:
         draw.rectangle([px - 4, 66, px + 4, 96], fill="#64748B")
     draw.polygon([(182, 64), (312, 36), (442, 64)], fill="#334155")
     draw.polygon([(224, 42), (312, 22), (400, 42)], fill="#1E293B")
-    _draw_pill_badge(draw, w / 2.0 - 38, 10, "APEC", fonts.get("sans_bold", 16), "#991B1B")
+    _draw_pill_badge(draw, w / 2.0 - 54, 10, "3 LEADERS", fonts.get("sans_bold", 16), "#991B1B")
 
     # Three leader silhouettes behind curved table
     for lx, col in ((170, "#1E293B"), (312, "#0F172A"), (454, "#334155")):
@@ -613,7 +613,6 @@ def _draw_scene_1(art_canvas, draw, fonts: FontBank) -> None:
     draw.pieslice([126, 148, w - 126, 240], 180, 360, fill="#92400E")
 
     # Stylized miniature flags (US, China, Russia)
-    # US flag
     fx, fy = 148, 110
     draw.line([(fx, fy), (fx, 145)], fill="#111827", width=3)
     draw.rectangle([fx + 2, fy, fx + 46, fy + 28], fill="#FFFFFF", outline="#475569", width=1)
@@ -621,20 +620,17 @@ def _draw_scene_1(art_canvas, draw, fonts: FontBank) -> None:
         draw.rectangle([fx + 2, fy + sy, fx + 46, fy + sy + 3], fill="#B91C1C")
     draw.rectangle([fx + 2, fy, fx + 22, fy + 15], fill="#1D4ED8")
 
-    # China flag
     fx, fy = 290, 104
     draw.line([(fx, fy), (fx, 140)], fill="#111827", width=3)
     draw.rectangle([fx + 2, fy, fx + 46, fy + 28], fill="#DC2626", outline="#991B1B", width=1)
     _draw_star(draw, fx + 12, fy + 10, 6, 2.5, 5, "#FACC15")
 
-    # Russia flag
     fx, fy = 432, 110
     draw.line([(fx, fy), (fx, 145)], fill="#111827", width=3)
     draw.rectangle([fx + 2, fy, fx + 46, fy + 9], fill="#FFFFFF", outline="#64748B", width=1)
     draw.rectangle([fx + 2, fy + 9, fx + 46, fy + 19], fill="#1D4ED8")
     draw.rectangle([fx + 2, fy + 19, fx + 46, fy + 28], fill="#DC2626")
 
-    # Olive-branch center motif
     draw.arc([278, 152, 346, 184], 190, 350, fill="#D97706", width=3)
 
 
@@ -643,18 +639,15 @@ def _draw_scene_2(art_canvas, draw, fonts: FontBank) -> None:
     w, h = art_canvas.size
     draw.text((22, 14), "$81.3BN", font=fonts.get("sans_bold", 42), fill="#0F172A")
 
-    # Stylized Manhattan & cylindrical Nasdaq tower with window panes
     skyline = [(28, 198, 72, 116, "#94A3B8"), (78, 198, 128, 86, "#64748B"), (214, 198, 258, 106, "#94A3B8")]
     for x0, y1, x1, y0, col in skyline:
         draw.rectangle([x0, y0, x1, y1], fill=col)
         for wy in range(y0 + 10, y1 - 8, 14):
             draw.line([(x0 + 6, wy), (x1 - 6, wy)], fill="#E2E8F0", width=2)
 
-    # Grid lines behind rising bars
     for gy in (44, 82, 120, 158):
         draw.line([(332, gy), (596, gy)], fill="#CBDCEB", width=1)
 
-    # Curved Nasdaq tower
     draw.rectangle([134, 62, 208, 198], fill="#1E3A8A", outline="#0F172A", width=2)
     draw.pieslice([134, 48, 208, 76], 180, 360, fill="#3B82F6", outline="#0F172A", width=2)
     for gy in (88, 114, 140, 166):
@@ -662,7 +655,6 @@ def _draw_scene_2(art_canvas, draw, fonts: FontBank) -> None:
     for gx in (152, 171, 190):
         draw.line([(gx, 62), (gx, 198)], fill="#1D4ED8", width=2)
 
-    # Subtle AI neural node cluster
     nodes = [(252, 42), (288, 28), (316, 54), (274, 72), (308, 86)]
     for i, p1 in enumerate(nodes):
         for p2 in nodes[i + 1:]:
@@ -670,13 +662,10 @@ def _draw_scene_2(art_canvas, draw, fonts: FontBank) -> None:
     for nx, ny in nodes:
         draw.ellipse([nx - 5, ny - 5, nx + 5, ny + 5], fill="#14B8A6", outline="#0F172A", width=1)
 
-    # Rising green/teal IPO bars & breakout arrow
     bar_heights = [36, 52, 68, 88, 112, 138, 162]
     bx = 342
     for idx, bh in enumerate(bar_heights):
-        col = "#0F766E" if idx < 5 else "#059669"
-        if idx == 6:
-            col = "#10B981"
+        col = "#0F766E" if idx < 5 else ("#059669" if idx == 5 else "#10B981")
         draw.rectangle([bx, h - bh, bx + 28, h], fill=col, outline="#064E3B", width=1)
         bx += 36
     draw.line([(336, 152), (464, 96), (576, 30)], fill="#B91C1C", width=5)
@@ -684,52 +673,64 @@ def _draw_scene_2(art_canvas, draw, fonts: FontBank) -> None:
 
 
 def _draw_scene_3(art_canvas, draw, fonts: FontBank) -> None:
-    """#3 Riyadh Dawn Missile Intercept: Kingdom Centre skyline & interception starburst."""
-    _ = fonts
+    """#3 GTA VI Midnight Unlock on #0B1324: neon sunset, Vice City skyline, palms, gamepad."""
     w, h = art_canvas.size
-    draw.rectangle([0, 128, w, h], fill="#FDE68A")
-    draw.rectangle([0, 150, w, h], fill="#FDBA74")
+    # Subtle stars in midnight sky
+    for sx, sy in ((184, 24), (236, 16), (412, 22), (478, 34), (544, 18), (586, 44)):
+        draw.ellipse([sx - 2, sy - 2, sx + 2, sy + 2], fill="#E2E8F0")
 
-    # Riyadh skyline: Faisaliah spire + Kingdom Centre parabolic notch + towers
-    draw.rectangle([40, 134, 88, h], fill="#475569")
-    draw.polygon([(112, h), (138, 52), (164, h)], fill="#334155")
-    draw.ellipse([132, 68, 144, 80], fill="#F59E0B")
-    draw.rectangle([186, 116, 232, h], fill="#475569")
+    # Glowing pink/orange neon horizon bands & retro sun disc
+    draw.rectangle([0, 108, w, 126], fill="#831843")
+    draw.rectangle([0, 126, w, 144], fill="#BE185D")
+    draw.rectangle([0, 144, w, h], fill="#1E1B4B")
+    sun_cx, sun_cy, sr = 312, 112, 64
+    draw.pieslice([sun_cx - sr, sun_cy - sr, sun_cx + sr, sun_cy + sr], 180, 360, fill="#F97316")
+    draw.pieslice([sun_cx - sr, sun_cy - sr, sun_cx + sr, sun_cy + sr], 200, 340, fill="#FACC15")
+    for sy in (78, 92, 106):
+        draw.rectangle([sun_cx - sr, sy, sun_cx + sr, sy + 4], fill="#0B1324")
 
-    # Kingdom Centre tower with parabolic skybridge cutout
-    draw.polygon([(264, h), (274, 34), (344, 34), (354, h)], fill="#1E293B")
-    draw.chord([284, 42, 334, 96], 0, 180, fill="#F5E1DA")
-    draw.rectangle([296, 40, 322, 46], fill="#94A3B8")
+    # Vice City art-deco coastal skyline with neon window highlights
+    buildings = [
+        (164, 88, 202, 144, "#1E1B4B", "#EC4899"),
+        (206, 62, 248, 144, "#312E81", "#38BDF8"),
+        (252, 78, 286, 144, "#1E1B4B", "#FACC15"),
+        (338, 72, 376, 144, "#312E81", "#EC4899"),
+        (382, 54, 424, 144, "#1E1B4B", "#38BDF8"),
+        (428, 92, 464, 144, "#312E81", "#F97316"),
+    ]
+    for x0, y0, x1, y1, bcol, wcol in buildings:
+        draw.rectangle([x0, y0, x1, y1], fill=bcol)
+        for wy in range(y0 + 10, y1 - 8, 12):
+            draw.line([(x0 + 6, wy), (x1 - 6, wy)], fill=wcol, width=2)
 
-    draw.rectangle([382, 122, 434, h], fill="#334155")
-    draw.rectangle([454, 140, 502, h], fill="#475569")
-    draw.rectangle([520, 128, 574, h], fill="#334155")
+    # Ocean neon reflections
+    for ry, rcol in ((154, "#EC4899"), (168, "#F97316"), (182, "#38BDF8")):
+        draw.line([(170, ry), (460, ry)], fill=rcol, width=2)
 
-    # Dotted trajectory from SW
-    for i in range(9):
-        t = i / 8.0
-        px = 42 + t * 396
-        py = 164 - math.sin(t * math.pi * 0.52) * 114
-        draw.ellipse([px - 4, py - 4, px + 4, py + 4], fill="#B91C1C")
+    # Tall palms flanking boulevard
+    _draw_palm(draw, 54, 192, 114, 16, "#090D16")
+    _draw_palm(draw, 118, 194, 88, -14, "#0F172A")
+    _draw_palm(draw, 566, 192, 112, -16, "#090D16")
+    _draw_palm(draw, 506, 194, 84, 14, "#0F172A")
 
-    # Defense radar wedge & interceptor trail from SE
-    draw.polygon([(530, 174), (434, 52), (476, 44)], fill=(15, 118, 110, 48))
-    draw.line([(530, 174), (446, 52)], fill="#0F766E", width=4)
+    # Bold hero metric top-left
+    draw.text((22, 12), "15.9M", font=fonts.get("sans_bold", 42), fill="#FDE047")
 
-    # Interception burst & shock rings
-    ix, iy = 444, 52
-    for r in (28, 42):
-        draw.ellipse([ix - r, iy - r, ix + r, iy + r], outline="#D97706", width=2)
-    _draw_star(draw, ix, iy, 24, 10, 9, "#F59E0B", "#B91C1C")
-    _draw_star(draw, ix, iy, 12, 5, 7, "#FEF3C7")
+    # Sleek modern console gamepad foreground center-right
+    gx, gy = 398, 146
+    draw.rounded_rectangle([gx - 68, gy - 28, gx + 68, gy + 24], radius=24, fill="#0F172A", outline="#EC4899", width=3)
+    draw.ellipse([gx - 78, gy - 6, gx - 34, gy + 40], fill="#0F172A", outline="#EC4899", width=2)
+    draw.ellipse([gx + 34, gy - 6, gx + 78, gy + 40], fill="#0F172A", outline="#EC4899", width=2)
+    draw.ellipse([gx - 42, gy - 10, gx - 20, gy + 12], fill="#38BDF8")
+    for dx, dy, c in ((32, -12, "#EC4899"), (46, -2, "#FACC15"), (32, 8, "#38BDF8"), (18, -2, "#34D399")):
+        draw.ellipse([gx + dx - 5, gy + dy - 5, gx + dx + 5, gy + dy + 5], fill=c)
 
 
 def _draw_scene_4(art_canvas, draw, fonts: FontBank) -> None:
     """#4 ICJ Rohingya Verdict: Peace Palace, scales of justice, UN wreath."""
     w, h = art_canvas.size
-    _draw_pill_badge(draw, w - 76, 10, "ICJ", fonts.get("sans_bold", 15), "#1E3A8A")
+    _draw_pill_badge(draw, w - 78, 10, "730K", fonts.get("sans_bold", 15), "#1E3A8A")
 
-    # Peace Palace brick facade + stepped clocktower
     draw.rectangle([20, 62, 176, h], fill="#B45309", outline="#78350F", width=2)
     draw.polygon([(14, 62), (98, 42), (182, 62)], fill="#334155")
     draw.rectangle([44, 22, 74, 62], fill="#9A3412", outline="#78350F", width=1)
@@ -737,7 +738,6 @@ def _draw_scene_4(art_canvas, draw, fonts: FontBank) -> None:
     for wx in (36, 72, 108, 144):
         draw.rectangle([wx, 76, wx + 18, 108], fill="#E2E8F0")
 
-    # UN blue disc + gold scales of justice
     cx, cy = 266, 68
     draw.ellipse([cx - 42, cy - 42, cx + 42, cy + 42], fill="#1D4ED8", outline="#93C5FD", width=3)
     draw.line([(cx, 26), (cx, 102)], fill="#FACC15", width=4)
@@ -755,14 +755,12 @@ def _draw_scene_5(art_canvas, draw, fonts: FontBank) -> None:
     draw.polygon([(0, 86), (170, 96), (220, h), (0, h)], fill="#F5D0A9")
     draw.polygon([(170, 96), (w, 72), (w, h), (220, h)], fill="#0284C7")
 
-    # Cyclone spiral arms over Bay of Bengal
     cx, cy = 266, 56
     for r, col, sa in ((48, "#0F766E", 20), (36, "#1E293B", 80), (24, "#0F766E", 160)):
         draw.arc([cx - r, cy - r, cx + r, cy + r], sa, sa + 210, fill=col, width=6)
         draw.arc([cx - r, cy - r, cx + r, cy + r], sa + 180, sa + 350, fill=col, width=5)
     draw.ellipse([cx - 10, cy - 10, cx + 10, cy + 10], fill="#B91C1C")
 
-    # Wind-bent palm, alert triangle, shelter tents
     _draw_palm(draw, 44, 114, 58, 22, "#166534")
     draw.polygon([(92, 56), (124, 56), (108, 26)], fill="#B91C1C")
     draw.line([(108, 34), (108, 46)], fill="#FEF08A", width=3)
@@ -770,49 +768,60 @@ def _draw_scene_5(art_canvas, draw, fonts: FontBank) -> None:
     for tx in (86, 134):
         draw.polygon([(tx, 114), (tx + 20, 88), (tx + 40, 114)], fill="#EA580C", outline="#9A3412", width=2)
 
-    draw.rounded_rectangle([w - 78, h - 38, w - 10, h - 6], radius=6, fill="#FFFFFF")
-    _draw_centered_text(draw, w - 44, h - 22, "50K", fonts.get("sans_bold", 22), "#0F172A")
+    draw.rounded_rectangle([w - 86, h - 38, w - 10, h - 6], radius=6, fill="#FFFFFF")
+    _draw_centered_text(draw, w - 48, h - 22, "200K", fonts.get("sans_bold", 21), "#0F172A")
 
 
 def _draw_scene_6(art_canvas, draw, fonts: FontBank) -> None:
-    """#6 Berlin Ukraine Security Summit: Brandenburg Gate, Ukraine shield, EU stars."""
-    _ = fonts
+    """#6 Central Gaza Ceasefire Line: tanks crossing dashed yellow line & watchtower."""
     w, h = art_canvas.size
-    # Brandenburg Gate silhouette
-    draw.rectangle([20, 44, 166, 56], fill="#B49263")
-    draw.rectangle([28, 30, 158, 44], fill="#D6B88D", outline="#8C6D46", width=1)
-    draw.rectangle([76, 14, 110, 30], fill="#475569")
-    for cx in (32, 58, 84, 110, 136, 152):
-        draw.rectangle([cx, 56, cx + 10, h], fill="#D6B88D", outline="#8C6D46", width=1)
+    _draw_pill_badge(draw, 14, 10, "RAID", fonts.get("sans_bold", 15), "#991B1B")
 
-    # Diplomatic curved table + Ukraine shield + arc of EU stars
-    draw.pieslice([192, 86, w - 18, h + 30], 180, 360, fill="#78350F")
-    sx, sy = 272, 68
-    draw.polygon([(sx - 24, sy - 20), (sx + 24, sy - 20), (sx + 20, sy + 8), (sx, sy + 26), (sx - 20, sy + 8)], fill="#1D4ED8")
-    draw.polygon([(sx - 21, sy + 2), (sx + 21, sy + 2), (sx + 18, sy + 8), (sx, sy + 24), (sx - 18, sy + 8)], fill="#FACC15")
+    # Desert horizon & berm
+    draw.rectangle([0, 74, w, h], fill="#E7C8A0")
+    draw.polygon([(0, 80), (94, 62), (168, 82), (0, 88)], fill="#D4AF7A")
 
-    for ang_deg in range(-75, 80, 25):
-        ang = math.radians(ang_deg - 90)
-        ex = sx + math.cos(ang) * 52
-        ey = sy + math.sin(ang) * 44
-        _draw_star(draw, ex, ey, 6, 2.6, 5, "#F59E0B")
+    # Watchtower silhouette right-back
+    draw.line([(312, 34), (304, 84)], fill="#475569", width=3)
+    draw.line([(334, 34), (342, 84)], fill="#475569", width=3)
+    draw.rectangle([304, 22, 342, 38], fill="#334155", outline="#1E293B", width=1)
+
+    # Dashed yellow ceasefire line across mid-ground
+    for dy in range(52, h - 4, 14):
+        x_off = (dy - 52) * 0.55
+        draw.line([(168 + x_off, dy), (176 + x_off, dy + 8)], fill="#EAB308", width=6)
+
+    # Two armored tank silhouettes advancing across the yellow line
+    for tx, ty, scale in ((78, 86, 0.85), (178, 92, 1.05)):
+        tw, th = int(76 * scale), int(22 * scale)
+        draw.rounded_rectangle([tx, ty, tx + tw, ty + th], radius=6, fill="#1E293B")
+        for wx in range(tx + 8, tx + tw - 8, int(14 * scale)):
+            draw.ellipse([wx, ty + th - int(10 * scale), wx + int(10 * scale), ty + th], fill="#475569")
+        draw.polygon([
+            (tx + int(10 * scale), ty),
+            (tx + int(22 * scale), ty - int(16 * scale)),
+            (tx + int(56 * scale), ty - int(16 * scale)),
+            (tx + int(64 * scale), ty),
+        ], fill="#334155", outline="#0F172A", width=1)
+        draw.line([
+            (tx + int(54 * scale), ty - int(10 * scale)),
+            (tx + int(92 * scale), ty - int(12 * scale)),
+        ], fill="#1E293B", width=max(3, int(4 * scale)))
 
 
 def _draw_scene_7(art_canvas, draw, fonts: FontBank) -> None:
     """#7 Antalya COP31 Crunch Day: Mediterranean wave, balance scale of green vs fossil."""
     w, h = art_canvas.size
-    _draw_pill_badge(draw, 14, 10, "COP31", fonts.get("sans_bold", 15), "#065F46")
+    _draw_pill_badge(draw, 14, 10, "$120BN", fonts.get("sans_bold", 15), "#065F46")
     draw.rectangle([0, 100, w, h], fill="#0284C7")
     draw.polygon([(20, 100), (62, 68), (104, 100)], fill="#FFFFFF", outline="#94A3B8", width=2)
     draw.polygon([(82, 100), (118, 74), (154, 100)], fill="#F1F5F9", outline="#94A3B8", width=2)
 
-    # Balance scale
     cx = 252
     draw.line([(cx, 24), (cx, 114)], fill="#1E293B", width=4)
     draw.rectangle([cx - 28, 110, cx + 28, 118], fill="#1E293B")
     draw.line([(cx - 64, 38), (cx + 64, 28)], fill="#1E293B", width=4)
 
-    # Left: clean leaf + turbine
     lx, ly = cx - 64, 38
     draw.line([(lx, ly), (lx, 74)], fill="#64748B", width=2)
     draw.ellipse([lx - 20, 58, lx + 4, 82], fill="#059669")
@@ -821,7 +830,6 @@ def _draw_scene_7(art_canvas, draw, fonts: FontBank) -> None:
         ba = math.radians(b_deg)
         draw.line([(lx + 10, 48), (lx + 10 + 14 * math.cos(ba), 48 + 14 * math.sin(ba))], fill="#0F766E", width=3)
 
-    # Right: fossil smoke + draft scroll
     rx, ry = cx + 64, 28
     draw.line([(rx, ry), (rx, 70)], fill="#64748B", width=2)
     draw.rectangle([rx - 14, 52, rx - 4, 72], fill="#475569")
@@ -830,43 +838,61 @@ def _draw_scene_7(art_canvas, draw, fonts: FontBank) -> None:
 
 
 def _draw_scene_8(art_canvas, draw, fonts: FontBank) -> None:
-    """#8 GTA VI Release Day: sunset stripes, palms, console controller."""
+    """#8 APEC 21-Economy Declaration: Pacific globe arcs & 21 radial economy nodes."""
     w, h = art_canvas.size
-    for y0, y1, col in ((0, 32, "#FB7185"), (32, 62, "#F97316"), (62, 92, "#FBBF24"), (92, h, "#312E81")):
-        draw.rectangle([0, y0, w, y1], fill=col)
+    _draw_pill_badge(draw, 14, 10, "21 STATES", fonts.get("sans_bold", 14), "#0F766E")
 
-    draw.text((w - 134, 10), "GTA VI", font=fonts.get("sans_bold", 34), fill="#4C1D95")
-    _draw_palm(draw, 44, 118, 86, -12, "#1E1B4B")
-    _draw_palm(draw, 94, 122, 68, 16, "#1E1B4B")
+    # Pacific Ocean basin & trade arcs
+    cx, cy = 228, 66
+    draw.ellipse([cx - 52, cy - 52, cx + 52, cy + 52], fill="#DCEBF7", outline="#0F766E", width=3)
+    draw.arc([cx - 48, cy - 36, cx + 48, cy + 36], 180, 360, fill="#0284C7", width=2)
+    draw.arc([cx - 48, cy - 20, cx + 48, cy + 50], 0, 180, fill="#D97706", width=2)
+    draw.arc([cx - 26, cy - 50, cx + 26, cy + 50], 0, 360, fill="#94A3B8", width=1)
 
-    # Modern gamepad controller
-    gx, gy = 230, 82
-    draw.rounded_rectangle([gx - 58, gy - 26, gx + 58, gy + 24], radius=22, fill="#1E1B4B", outline="#EC4899", width=2)
-    draw.ellipse([gx - 66, gy - 6, gx - 28, gy + 38], fill="#1E1B4B")
-    draw.ellipse([gx + 28, gy - 6, gx + 66, gy + 38], fill="#1E1B4B")
-    draw.ellipse([gx - 34, gy - 8, gx - 16, gy + 10], fill="#38BDF8")
-    for dx, dy, c in ((26, -12, "#EC4899"), (38, -2, "#FACC15"), (26, 8, "#38BDF8"), (14, -2, "#34D399")):
-        draw.ellipse([gx + dx - 4, gy + dy - 4, gx + dx + 4, gy + dy + 4], fill=c)
+    # 21 distinct radial APEC economy nodes around outer emblem ring
+    for i in range(21):
+        ang = -math.pi / 2.0 + (2.0 * math.pi * i) / 21.0
+        nx = cx + 46 * math.cos(ang)
+        ny = cy + 46 * math.sin(ang)
+        ix = cx + 20 * math.cos(ang)
+        iy = cy + 20 * math.sin(ang)
+        if i % 3 == 0:
+            draw.line([(ix, iy), (nx, ny)], fill="#B45309", width=1)
+        node_col = "#0F766E" if i % 2 == 0 else "#D97706"
+        draw.ellipse([nx - 4, ny - 4, nx + 4, ny + 4], fill=node_col, outline="#FFFFFF", width=1)
+
+    # Stylized Shenzhen bay container ship / trade bars left-bottom
+    draw.polygon([(24, 108), (126, 108), (114, 122), (34, 122)], fill="#1E293B")
+    for sx, scol in ((42, "#B91C1C"), (64, "#0F766E"), (86, "#D97706")):
+        draw.rectangle([sx, 94, sx + 18, 108], fill=scol, outline="#FFFFFF", width=1)
 
 
 def _draw_scene_9(art_canvas, draw, fonts: FontBank) -> None:
-    """#9 Africa 44% War-Zone Children: Africa silhouette, 44% gauge, schoolhouse."""
+    """#9 Riyadh Dawn Missile Intercept & All-Clear: Kingdom Centre, Patriot arc, 04:42."""
     w, h = art_canvas.size
-    africa_pts = [(34, 24), (78, 22), (92, 46), (112, 54), (96, 82), (82, 114), (64, 116), (56, 82), (32, 62), (24, 42)]
-    draw.polygon(africa_pts, fill="#C2410C")
+    _draw_pill_badge(draw, 14, 10, "04:42", fonts.get("sans_bold", 15), "#0F766E")
+    draw.rectangle([0, 92, w, h], fill="#FDE68A")
+    draw.rectangle([0, 108, w, h], fill="#FDBA74")
 
-    # 44% donut gauge
-    cx, cy, r = 196, 64, 42
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline="#D6CFC2", width=14)
-    draw.arc([cx - r, cy - r, cx + r, cy + r], -90, -90 + 158, fill="#B91C1C", width=14)
-    _draw_centered_text(draw, cx, cy, "44%", fonts.get("sans_bold", 26), "#111827")
+    # Scaled Riyadh skyline: Faisaliah spire + Kingdom Centre notch
+    draw.rectangle([28, 92, 54, h], fill="#475569")
+    draw.polygon([(66, h), (84, 46), (102, h)], fill="#334155")
+    draw.ellipse([79, 56, 89, 66], fill="#F59E0B")
+    draw.polygon([(142, h), (150, 28), (194, 28), (202, h)], fill="#1E293B")
+    draw.chord([156, 32, 188, 68], 0, 180, fill="#F5E1DA")
+    draw.rectangle([222, 86, 254, h], fill="#475569")
 
-    # Schoolhouse & child silhouettes
-    draw.rectangle([274, 62, 344, 112], fill="#FFFFFF", outline="#475569", width=2)
-    draw.polygon([(266, 62), (309, 32), (352, 62)], fill="#1E293B")
-    for chx in (294, 324):
-        draw.ellipse([chx - 6, 76, chx + 6, 88], fill="#D97706")
-        draw.rectangle([chx - 7, 90, chx + 7, 112], fill="#1E293B")
+    # Incoming dotted crimson arc + teal Patriot interceptor arc & burst
+    for i in range(7):
+        t = i / 6.0
+        px = 26 + t * 244
+        py = 104 - math.sin(t * math.pi * 0.56) * 70
+        draw.ellipse([px - 3, py - 3, px + 3, py + 3], fill="#B91C1C")
+    draw.line([(326, 114), (272, 38)], fill="#0F766E", width=4)
+    ix, iy = 270, 38
+    draw.ellipse([ix - 24, iy - 24, ix + 24, iy + 24], outline="#D97706", width=2)
+    _draw_star(draw, ix, iy, 16, 7, 8, "#F59E0B", "#B91C1C")
+    _draw_star(draw, ix, iy, 8, 3.5, 6, "#FEF3C7")
 
 
 def _draw_scene_10(art_canvas, draw, fonts: FontBank) -> None:
@@ -875,7 +901,6 @@ def _draw_scene_10(art_canvas, draw, fonts: FontBank) -> None:
     draw.rectangle([0, 102, w, h], fill="#0284C7")
     draw.rectangle([16, 94, 166, 104], fill="#CBD5E1")
 
-    # Sydney Opera House sail shells
     for sx0, sx1, sy0 in ((24, 72, 40), (58, 108, 30), (94, 138, 48), (124, 158, 62)):
         draw.polygon([(sx0, 94), (sx0 + 12, sy0), (sx1, 94)], fill="#FFFFFF", outline="#64748B", width=2)
 
@@ -890,9 +915,8 @@ def _draw_scene_10(art_canvas, draw, fonts: FontBank) -> None:
 def _draw_scene_11(art_canvas, draw, fonts: FontBank) -> None:
     """#11 Korea Suneung Flight Halt: prohibited plane circle + OMR answer sheet & pencil."""
     w, h = art_canvas.size
-    _draw_pill_badge(draw, 14, 10, "35 MIN", fonts.get("sans_bold", 15), "#1E293B")
+    _draw_pill_badge(draw, 14, 10, "550K", fonts.get("sans_bold", 15), "#1E293B")
 
-    # Airplane inside prohibited circle-slash
     cx, cy = 104, 72
     draw.polygon([(cx - 32, cy), (cx + 30, cy - 8), (cx + 36, cy), (cx + 30, cy + 6), (cx - 32, cy + 4)], fill="#1E3A8A")
     draw.polygon([(cx - 6, cy - 2), (cx + 12, cy - 26), (cx + 2, cy - 2)], fill="#1E3A8A")
@@ -900,7 +924,6 @@ def _draw_scene_11(art_canvas, draw, fonts: FontBank) -> None:
     draw.ellipse([cx - 42, cy - 42, cx + 42, cy + 42], outline="#B91C1C", width=5)
     draw.line([(cx - 28, cy - 28), (cx + 28, cy + 28)], fill="#B91C1C", width=5)
 
-    # OMR test sheet + pencil + muted phone cleanly spaced
     draw.rectangle([180, 22, 256, 114], fill="#FFFFFF", outline="#64748B", width=2)
     for ry in range(34, 106, 14):
         for rx in range(192, 248, 14):
@@ -914,25 +937,22 @@ def _draw_scene_11(art_canvas, draw, fonts: FontBank) -> None:
 
 def _draw_scene_12(art_canvas, draw, fonts: FontBank) -> None:
     """#12 Kerch Bridge Struck: twin-chord arch bridge, blast plume, roadblock."""
-    _ = fonts
     w, h = art_canvas.size
+    _draw_pill_badge(draw, 12, 10, "3RD HIT", fonts.get("sans_bold", 14), "#991B1B")
     draw.rectangle([0, 92, w, h], fill="#0369A1")
     for wx in (20, 120, 230, 300):
         draw.line([(wx, 108), (wx + 40, 108)], fill="#7DD3FC", width=2)
 
-    # Bridge piers + twin steel arch span + deck
     for px in (72, 148, 224, 300):
         draw.rectangle([px - 6, 74, px + 6, 112], fill="#64748B")
-    draw.arc([138, 28, 234, 116], 180, 360, fill="#CBD5E1", width=6)
-    draw.arc([142, 34, 230, 116], 180, 360, fill="#475569", width=3)
+    draw.arc([138, 28, 234, 116], 180, 360, fill="#64748B", width=6)
+    draw.arc([142, 34, 230, 116], 180, 360, fill="#334155", width=3)
     draw.rectangle([0, 72, w, 82], fill="#334155")
 
-    # Blast plume mid-span
     draw.ellipse([162, 16, 206, 54], fill="#475569")
     _draw_star(draw, 186, 58, 22, 9, 8, "#B91C1C")
     _draw_star(draw, 186, 60, 12, 5, 6, "#F59E0B")
 
-    # Red-white striped roadblock barrier left
     draw.rectangle([14, 62, 22, 82], fill="#1E293B")
     for bx in range(22, 82, 12):
         col = "#DC2626" if (bx // 12) % 2 == 0 else "#FFFFFF"
@@ -1006,7 +1026,7 @@ def _draw_masthead(draw, fonts: FontBank) -> None:
     tw = tb[2] - tb[0]
     draw.text(((CANVAS_W - tw) / 2.0 - tb[0], 54 - tb[1]), title, font=title_font, fill=PALETTE["ink"])
 
-    deck_font = fonts.get("serif_italic", 23)
+    deck_font = fonts.get("serif_italic", 19)
     _draw_centered_text(draw, CANVAS_W / 2.0, 178, MASTHEAD_DECK, deck_font, PALETTE["crimson"])
     draw.line([(x0, 198), (x1, 198)], fill=PALETTE["rule"], width=2)
 
@@ -1214,16 +1234,16 @@ def _draw_date_check(draw, fonts: FontBank) -> None:
     draw.rectangle([dx0, dy0, dx1, dy1], fill=PALETTE["date_bg"], outline="#F0C6BA", width=1)
     draw.rectangle([dx0, dy0, dx0 + 6, dy1], fill=PALETTE["crimson"])
 
-    bold_font = fonts.get("sans_bold", 16)
-    reg_font = fonts.get("sans_regular", 16)
+    bold_font = fonts.get("sans_bold", 15)
+    reg_font = fonts.get("sans_regular", 15)
 
-    lbl1 = "DATE CHECK — Verified 19 Nov UTC: "
-    draw.text((dx0 + 18, dy0 + 9), lbl1, font=bold_font, fill=PALETTE["crimson"])
-    draw.text((dx0 + 18 + bold_font.getlength(lbl1), dy0 + 9), DATE_CHECK_UTC, font=reg_font, fill=PALETTE["ink"])
+    lbl1 = "DATE CHECK — Verified Thu 19 Nov UTC: "
+    draw.text((dx0 + 18, dy0 + 10), lbl1, font=bold_font, fill=PALETTE["crimson"])
+    draw.text((dx0 + 18 + bold_font.getlength(lbl1), dy0 + 10), DATE_CHECK_UTC, font=reg_font, fill=PALETTE["ink"])
 
-    lbl2 = "Left out on purpose as Wednesday 18 November news: "
-    draw.text((dx0 + 18, dy0 + 35), lbl2, font=bold_font, fill=PALETTE["sub_ink"])
-    draw.text((dx0 + 18 + bold_font.getlength(lbl2), dy0 + 35), DATE_CHECK_EXCLUDED, font=reg_font, fill=PALETTE["sub_ink"])
+    lbl2 = "Left out on purpose as Wed 18 Nov / earlier news: "
+    draw.text((dx0 + 18, dy0 + 36), lbl2, font=bold_font, fill=PALETTE["sub_ink"])
+    draw.text((dx0 + 18 + bold_font.getlength(lbl2), dy0 + 36), DATE_CHECK_EXCLUDED, font=reg_font, fill=PALETTE["sub_ink"])
 
 
 def _draw_footer(draw, fonts: FontBank) -> None:
